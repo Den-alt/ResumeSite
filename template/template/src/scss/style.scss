@@ -1,0 +1,76 @@
+//!------------Variables------------
+$mxw: "";
+$mw1: $mxw + 14;
+$mw2: 992.98px;
+$mw3: 767.98px;
+$mw4: 479.98px;
+$bgc: #fff;
+//!------------------------------------
+//?------------mixin------------
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+//?------------------------------------
+
+//?------------fonts------------
+//?&subset=cyrillic-ext
+@import "fonts";
+
+//*Default font:
+$font_family: "";
+//?------------------------------------
+
+//TODO------------workplace------------
+//*---------------reset----------------
+@import "reset";
+//*------------------------------------
+//*------------container---------------
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: $bgc;
+}
+.container {
+  max-width: $mxw + px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+//*-----------------ibg-------------------
+//?-explanation of code to look at README-
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+//*---------------------------------------
+
+//*---------------styles------------------
+//!@import "slider";
+@import "header";
+@import "footer";
+//*---------------------------------------
+
+//*-------------main-screen---------------
+
+//*---------------------------------------
+//TODO------------------------------------
