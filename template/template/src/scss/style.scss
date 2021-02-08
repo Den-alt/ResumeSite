@@ -79,5 +79,12 @@ $font_family: 'Roboto', sans-serif;
     color: rgb(133, 11, 11);
   }
 }
+.email{
+  font-size: 22px;
+  &__id{
+    font-weight: 300;
+    font-style: italic;
+  }
+}
 //*---------------------------------------
 //TODO------------------------------------

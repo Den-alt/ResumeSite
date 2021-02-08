@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300italic,regular,700);
 
 /*----reset-css----*/
 
@@ -160,4 +160,13 @@ h6 {
 .download:hover {
   text-decoration: none;
   color: #850b0b;
+}
+
+.email {
+  font-size: 22px;
+}
+
+.email__id {
+  font-weight: 300;
+  font-style: italic;
 }
